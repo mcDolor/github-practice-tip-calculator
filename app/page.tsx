@@ -12,8 +12,8 @@ export default function Home() {
   const [tip, setTip] = useState<number>(0);
   const [user, setUser] = useState<number>(0);
 
-  const tipAmount = user ? (bill * tip) / 100 / user : 0;
-  const total = user ? (bill / user) + tipAmount : 0;
+  const tipAmount = user ? (bill * (tip / 100)) / user : 0;
+  const total = user ? (bill + bill * (tip / 100)) / user : 0;
 
   const resetAll = () => {
     setBill(0);
@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center w-full min-h-screen py-8 px-4">
-      <h1 className="text-[#00474b] text-1xl font-semibold tracking-[0.3em] mb-8 text-center">
-        S P L I <br /> T T E R
+      <h1 className="text-grey-500 text-1xl font-semibold tracking-[0.3em] mb-8 text-center">
+        SPLI <br /> TTER
       </h1>
 
       <section className="bg-white rounded-2xl shadow-lg w-full max-w-[900px] p-6 md:p-10 grid gap-6 md:grid-cols-2">

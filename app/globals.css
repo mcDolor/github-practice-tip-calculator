@@ -1,8 +1,5 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
-
-/* Tell Tailwind we’re referencing its classes */
-@reference "tailwindcss";
+@config "../tailwind.config.ts";
+@import "tailwindcss";
 
 /* Apply Tailwind utilities */
 body {
