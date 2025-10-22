@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Splitter - Tip Calculator",
   description: "Calculate tip and split bill easily",

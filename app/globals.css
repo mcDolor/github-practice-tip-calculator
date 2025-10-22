@@ -1,5 +1,10 @@
-@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 
+/* Tell Tailwind we’re referencing its classes */
+@reference "tailwindcss";
+
+/* Apply Tailwind utilities */
 body {
   @apply bg-[#c5e4e7] font-mono;
 }
