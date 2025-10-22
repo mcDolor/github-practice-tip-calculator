@@ -10,8 +10,8 @@ export default function ResetButton({ resetAll, disabled }: Props) {
       disabled={disabled}
       className={`mt-8 w-full py-2 rounded-lg font-bold ${
         disabled
-          ? "bg-[#0d686d] text-[#00474b] opacity-30"
-          : "bg-[#26c2ae] hover:bg-[#9fe8df] text-[#00474b]"
+          ? "bg-grey-500 text-green-900 opacity-30"
+          : "bg-green-400 hover:bg-[#9fe8df] text-green-900"
       }`}
     >
       RESET
