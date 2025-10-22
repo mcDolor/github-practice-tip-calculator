@@ -8,3 +8,7 @@
 body {
   @apply bg-[#c5e4e7] font-mono;
 }
+
+* {
+  transition: all 0.2s ease-in-out;
+}
