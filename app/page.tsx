@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center w-full min-h-screen py-8 px-4">
-      <h1 className="text-[#00474b] text-3xl font-semibold tracking-[0.3em] mb-8 text-center">
+      <h1 className="text-[#00474b] text-1xl font-semibold tracking-[0.3em] mb-8 text-center">
         S P L I <br /> T T E R
       </h1>
 
