@@ -1,5 +1,21 @@
+@config "../tailwind.config.ts";
 @import "tailwindcss";
 
+/* Apply Tailwind utilities */
 body {
   @apply bg-[#c5e4e7] font-mono;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
 }
