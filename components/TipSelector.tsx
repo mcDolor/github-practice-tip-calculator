@@ -8,12 +8,12 @@ export default function TipSelector({ tip, setTip }: Props) {
   return (
     <div>
       <label className="block text-[#5e7a7d] mb-2">Select Tip %</label>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {tips.map((t) => (
           <button
             key={t}
             onClick={() => setTip(t)}
-            className={`py-2 rounded-lg font-bold ${
+            className={`py-2 rounded-lg font-bold transition-all ${
               tip === t
                 ? "bg-[#26c2ae] text-[#00474b]"
                 : "bg-[#00474b] text-white hover:bg-[#9fe8df] hover:text-[#00474b]"

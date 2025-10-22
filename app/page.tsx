@@ -22,17 +22,25 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-white w-[900px] rounded-2xl shadow-lg p-8 grid md:grid-cols-2 gap-6">
-      <div className="space-y-6">
-        <BillInput bill={bill} setBill={setBill} />
-        <TipSelector tip={tip} setTip={setTip} />
-        <UserInput user={user} setUser={setUser} />
-      </div>
+    <main className="flex flex-col items-center w-full min-h-screen py-8 px-4">
+      <h1 className="text-[#00474b] text-3xl font-semibold tracking-[0.3em] mb-8 text-center">
+        S P L I <br /> T T E R
+      </h1>
 
-      <div className="bg-[#00474b] rounded-2xl p-8 flex flex-col justify-between">
-        <ResultCard tipAmount={tipAmount} total={total} />
-        <ResetButton resetAll={resetAll} disabled={!bill && !tip && !user} />
-      </div>
+      <section className="bg-white rounded-2xl shadow-lg w-full max-w-[900px] p-6 md:p-10 grid gap-6 md:grid-cols-2">
+        {/* LEFT */}
+        <div className="space-y-6">
+          <BillInput bill={bill} setBill={setBill} />
+          <TipSelector tip={tip} setTip={setTip} />
+          <UserInput user={user} setUser={setUser} />
+        </div>
+
+        {/* RIGHT */}
+        <div className="bg-[#00474b] rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <ResultCard tipAmount={tipAmount} total={total} />
+          <ResetButton resetAll={resetAll} disabled={!bill && !tip && !user} />
+        </div>
+      </section>
     </main>
   );
 }
