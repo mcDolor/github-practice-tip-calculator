@@ -8,14 +8,14 @@ interface Props {
 export default function BillInput({ bill, setBill }: Props) {
   return (
     <div className="relative">
-      <label className="block text-[#5e7a7d] mb-2">Bill</label>
+      <label className="block text-sm text-grey-500 mb-2">Bill</label>
       <div className="relative">
-        <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9ebbbd]" size={18} />
+        <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 text-grey-400" size={18} />
         <input
           type="number"
           value={bill || ""}
           onChange={(e) => setBill(Number(e.target.value))}
-          className="w-full text-right bg-[#f3f9fa] p-2 pl-10 rounded-lg border border-transparent focus:border-[#26c2ae] outline-none font-semibold text-[#00474b]"
+          className="w-full text-xl text-right bg-grey-50 p-2 pl-10 rounded-lg border-2 border-transparent focus:border-green-400 outline-none font-semibold text-green-900"
           placeholder="0"
         />
       </div>
