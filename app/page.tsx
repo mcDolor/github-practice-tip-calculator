@@ -4,6 +4,7 @@ import { useState } from "react";
 import BillInput from "@/components/BillInput";
 import TipSelector from "@/components/TipSelector";
 import UserInput from "@/components/UserInput";
+import ResultCard from "@/components/ResultCard";
 
 export default function Home() {
   const [bill, setBill] = useState<number>(0);
@@ -28,6 +29,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#00474b] rounded-2xl p-8 flex flex-col justify-between">
+        <ResultCard tipAmount={tipAmount} total={total} />
       </div>
     </main>
   );
